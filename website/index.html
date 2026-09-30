@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AWS High Availability Web Hosting</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .service {
+            padding: 20px;
+            background: #eef2ff;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>AWS High Availability Web Hosting</h1>
+    <p>Linux • Networking • AWS • Load Balancing</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Project Overview</h2>
+
+        <p>
+            This project demonstrates a highly available web hosting
+            infrastructure built using AWS, Amazon Linux, networking
+            components and an Application Load Balancer.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>AWS Services Used</h2>
+
+        <div class="services">
+
+            <div class="service">
+                <h3>Amazon VPC</h3>
+                <p>Custom network infrastructure.</p>
+            </div>
+
+            <div class="service">
+                <h3>Amazon EC2</h3>
+                <p>Two Linux web servers.</p>
+            </div>
+
+            <div class="service">
+                <h3>Application Load Balancer</h3>
+                <p>Distributes incoming traffic.</p>
+            </div>
+
+            <div class="service">
+                <h3>Security Groups</h3>
+                <p>Controls network access.</p>
+            </div>
+
+            <div class="service">
+                <h3>Amazon Linux</h3>
+                <p>Server operating system.</p>
+            </div>
+
+            <div class="service">
+                <h3>Apache</h3>
+                <p>Web server hosting the application.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+
+        <h2>High Availability</h2>
+
+        <p>
+            Two web servers were deployed in separate Availability Zones.
+            An Application Load Balancer distributed HTTP traffic between
+            the servers.
+        </p>
+
+        <br>
+
+        <p>
+            During testing, one EC2 instance was stopped and the website
+            remained accessible through the remaining healthy server.
+        </p>
+
+    </div>
+
+</div>
+
+<footer>
+    AWS High Availability Web Hosting Project<br>
+    Created by Bhavik Koli
+</footer>
+
+</body>
+</html>
